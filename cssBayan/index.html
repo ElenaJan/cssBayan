@@ -1,65 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Bayan</title>
+  </head>
+  <body>
     <div class="container">
-        <h1>CSS Bayan</h1>
-        <div class="mems">
-            <div class="mem">
-                <input type="checkbox" id="mem1">
-                <label class="tab-label" for="mem1">Add flexbox to pikachu mem</label>
-                <div class="mem-content">
-                    <img src="./assets/img/0j6j5aefbocnrwkobhuk.jpeg" alt="pikachu with eyes, nose and mouth in a same line">
-                </div>
-            </div>
-            <div class="mem">
-                <input type="checkbox" id="mem2">
-                <label class="tab-label" for="mem2">Accidentally chenges small CSS property</label>
-                <div class="mem-content">
-                    <img src="./assets/img/135051577_1062350537526022_5150120801114779946_n-6624338286.jpg" alt="pikachu with mouth on nose">
-                </div>
-            </div>
-            <div class="mem">
-                <input type="checkbox" id="mem3">
-                <label class="tab-label" for="mem3">Let's rewrite the CSS</label>
-                <div class="mem-content">
-                    <img src="./assets/img/68747470733a2f2f696d672d396761672d66756e2e3963616368652e636f6d2f70686f746f2f61317251476f385f343630732e6a7067.jpeg" alt="pikachu with eyes, nose and mouth in a same line">
-                </div>
-            </div>
-            <div class="mem">
-                <input type="checkbox" id="mem4">
-                <label class="tab-label" for="mem4">When you write 5em instead of 5px</label>
-                <div class="mem-content">
-                    <img src="./assets/img/a3wgwE8_460s.jpg" alt="girl with wide eyebrows">
-                </div>
-            </div>
-            <div class="mem">
-                <input type="checkbox" id="mem5">
-                <label class="tab-label" for="mem5">Learn to make a website</label>
-                <div class="mem-content">
-                    <img src="./assets/img/jHM1BWX.jpg" alt="when man add css the letters do not fit the desk">
-                </div>
-            </div>
-            <div class="mem">
-                <input type="checkbox" id="mem6">
-                <label class="tab-label" for="mem6">My life flashes before my eyes</label>
-                <div class="mem-content">
-                    <img src="./assets/img/photo_2023-03-09_08-44-04.jpg" alt="everything that he saw is the laptop">
-                </div>
-            </div>
-            <div class="mem">
-                <input type="checkbox" id="mem7">
-                <label class="tab-label" for="mem7">When your css property doesn't work</label>
-                <div class="mem-content">
-                    <img src="./assets/img/when-your-css-property-doesnt-work-important-style-is-my-64347035.png" alt="he add important">
-                </div>
-            </div>
+      <h1 class="mems-title">CSS Bayan</h1>
+      <div class="mems">
+        <div class="mem">
+          <input type="radio" id="mem1" name="mem" value="mem1" checked />
+          <label class="label__text" for="mem1"
+            >Add flexbox to pikachu mem
+            <img
+              class="icon"
+              src="./assets/svg/cross-23.svg"
+              alt="cross-icon"
+            />
+          </label>
+          <div class="mem-content">
+            <label for="mem1">
+              <img
+                src="./assets/img/0j6j5aefbocnrwkobhuk.jpeg"
+                alt="pikachu with eyes, nose and mouth in a same line"
+              />
+            </label>
+          </div>
         </div>
+        <div class="mem">
+          <input type="radio" id="mem2" name="mem" value="mem2" />
+          <label class="label__text" for="mem2"
+            >Accidentally chenges small CSS property
+            <img
+              class="icon"
+              src="./assets/svg/cross-23.svg"
+              alt="cross-icon"
+            />
+          </label>
+          <div class="mem-content">
+            <label for="mem2">
+              <img
+                src="./assets/img/135051577_1062350537526022_5150120801114779946_n-6624338286.jpg"
+                alt="pikachu with mouth on nose"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="mem">
+          <input type="radio" id="mem3" name="mem" value="mem3" />
+          <label class="label__text" for="mem3"
+            >Let's rewrite the CSS
+            <img
+              class="icon"
+              src="./assets/svg/cross-23.svg"
+              alt="cross-icon"
+            />
+          </label>
+          <div class="mem-content">
+            <label for="mem3">
+              <img
+                src="./assets/img/68747470733a2f2f696d672d396761672d66756e2e3963616368652e636f6d2f70686f746f2f61317251476f385f343630732e6a7067.jpeg"
+                alt="pikachu with eyes, nose and mouth in a same line"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="mem">
+          <input type="radio" id="mem4" name="mem" value="mem4" />
+          <label class="label__text" for="mem4"
+            >When you write 5em instead of 5px
+            <img
+              class="icon"
+              src="./assets/svg/cross-23.svg"
+              alt="cross-icon"
+            />
+          </label>
+          <div class="mem-content">
+            <label for="mem4">
+              <img
+                src="./assets/img/a3wgwE8_460s.jpg"
+                alt="girl with wide eyebrows"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="mem">
+          <input type="radio" id="mem5" name="mem" value="mem5" />
+          <label class="label__text" for="mem5"
+            >Learn to make a website
+            <img
+              class="icon"
+              src="./assets/svg/cross-23.svg"
+              alt="cross-icon"
+            />
+          </label>
+          <div class="mem-content">
+            <label for="mem5">
+              <img
+                src="./assets/img/jHM1BWX.jpg"
+                alt="when man add css the letters do not fit the desk"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="mem">
+          <input type="radio" id="mem6" name="mem" value="mem6" />
+          <label class="label__text" for="mem6"
+            >My life flashes before my eye
+            <img
+              class="icon"
+              src="./assets/svg/cross-23.svg"
+              alt="cross-icon"
+            />
+          </label>
+          <div class="mem-content">
+            <label for="mem6">
+              <img
+                src="./assets/img/photo_2023-03-09_08-44-04.jpg"
+                alt="everything that he saw is the laptop"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="mem">
+          <input type="radio" id="mem7" name="mem" value="mem7" />
+          <label class="label__text" for="mem7"
+            >When your css property doesn't work
+            <img
+              class="icon"
+              src="./assets/svg/cross-23.svg"
+              alt="cross-icon"
+            />
+          </label>
+          <div class="mem-content">
+            <label for="mem7">
+              <img
+                src="./assets/img/when-your-css-property-doesnt-work-important-style-is-my-64347035.png"
+                alt="he add important"
+              />
+            </label>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

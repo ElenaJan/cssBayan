@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.mems-title {
+  font-size: 3rem;
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 0.1rem solid #000;
+}
+.container {
+  max-width: 40rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+.mems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.mem-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.mem-content img {
+  display: none;
+  opacity: 0.1;
+  margin-top: 1rem;
+  width: 20rem;
+}
+input {
+  display: none;
+}
+.mem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.label__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 28rem;
+  padding: 2rem 3rem;
+  font-size: 1.5rem;
+  background-color: rgb(224, 223, 236);
+  color: blueviolet;
+  cursor: pointer;
+}
+.label__text:hover ~ .mem-content img {
+  display: block;
+  animation: myAnim 1s ease-in-out 0s 1 normal forwards;
+}
+.mem-content:hover img {
+    display: block;
+    opacity: 1;
+}
+.mem-content:hover ~ .label__text {
+    color: #000;
+}
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.label__text > img {
+  opacity: 0;
+  width: 1.5rem;
+  transform: rotate(45deg);
+  transition: opacity 0.5s ease-in-out;
+}
+.label__text:hover > img {
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: all 0.5s ease-in-out;
+}
+.mems:hover .label__text {
+  color: #000;
+  transition: all 0.5s ease-in;
+}
+.mems:hover .label__text>img {
+    opacity: 1;
+}
+input:checked ~ .mem-content img {   
+    display: block;
+    opacity: 1;
+}
+input:checked ~ label {
+    color: #000;
+}
+input:checked ~ .label__text>img {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+.mem:hover .label__text>.icon {
+    transform: rotate(0deg);
+}
+label:hover {
+    cursor: pointer;
+}
